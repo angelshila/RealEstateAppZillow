@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myfirstapp.MainActivity" 
+    android:background="@drawable/background">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  
+        
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchprop" 
+        android:textColor="#FFFFFF"
+        android:textSize="13pt"/>
+      
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add" 
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"/>
+      
+       <EditText android:id="@+id/edit_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Street Address"
+        android:background="#FFFFFF"
+         android:textSize="8pt"
+         />
+       
+       
+        <EditText android:id="@+id/emptycontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#ce0000"
+        android:textSize="7pt"
+       />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city" 
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"/>
+      
+       <EditText android:id="@+id/edit_message1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="City" 
+        android:background="#ffffff"
+         android:textSize="8pt"
+        />
+         
+       <EditText android:id="@+id/emptycontent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#ce0000"
+        android:textSize="7pt"
+       />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state" 
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"/>
+       
+       <Spinner
+   		 android:id="@+id/states_array"
+    	 android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/states_array"
+            android:background="#ffffff"
+    
+     />
+       
+       <EditText android:id="@+id/emptycontent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#ce0000"
+        android:textSize="7pt"
+       />
+      
+        
+ 
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:shrinkColumns="0"
+    >
+    <TableRow>
+        <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchbutt" 
+        android:onClick="sendMessage"/>
+        
+        <ImageView
+        android:id="@+id/zillowlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        
+        android:src="@drawable/zillowlogo" />
+    </TableRow>
+    
+</TableLayout>
+ <EditText android:id="@+id/hr"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+         android:paddingTop="4dp"
+
+        android:background="#FFFFFF"
+         
+         />
+      <EditText android:id="@+id/notfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"
+       />
+     
+</LinearLayout>
+</RelativeLayout>
